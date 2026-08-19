@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f4f4;
+
+    color: #111;
+
+    line-height: 1.4;
+}
+
+
+/* MAIN RESUME */
+
+.resume {
+    max-width: 1000px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 35px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+
+    border-bottom: 2px solid #111;
+
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+
+    font-size: 30px;
+}
+
+.header h2 {
+    margin: 5px 0 15px;
+
+    font-size: 18px;
+
+    font-weight: 500;
+}
+
+.contact,
+.links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+
+    font-size: 14px;
+
+    margin-top: 8px;
+}
+
+.links a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+/* TWO COLUMN LAYOUT */
+
+.content {
+    display: grid;
+
+    grid-template-columns: 30% 70%;
+
+    margin-top: 20px;
+}
+
+
+/* LEFT COLUMN */
+
+.left-column {
+    padding-right: 25px;
+
+    border-right: 1px solid #aaa;
+}
+
+
+/* RIGHT COLUMN */
+
+.right-column {
+    padding-left: 25px;
+}
+
+
+/* SECTIONS */
+
+section {
+    margin-bottom: 22px;
+}
+
+section h3 {
+    margin: 0 0 10px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 2px solid #aaa;
+
+    font-size: 17px;
+}
+
+
+/* TEXT */
+
+p {
+    margin: 5px 0;
+
+    font-size: 14px;
+}
+
+h4 {
+    margin: 8px 0 2px;
+
+    font-size: 15px;
+}
+
+.role {
+    font-weight: 500;
+}
+
+small {
+    font-size: 12px;
+
+    color: #444;
+}
+
+
+/* LISTS */
+
+ul {
+    margin-top: 7px;
+
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+
+    font-size: 14px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 0;
+    }
+
+    .resume {
+        width: 100%;
+
+        padding: 20px;
+
+        box-shadow: none;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column {
+        padding-right: 0;
+
+        border-right: none;
+
+        border-bottom: 1px solid #aaa;
+
+        padding-bottom: 10px;
+    }
+
+    .right-column {
+        padding-left: 0;
+
+        padding-top: 20px;
+    }
+
+    .contact,
+    .links {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+}
